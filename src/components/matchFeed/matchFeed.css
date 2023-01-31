@@ -1,0 +1,557 @@
+.matchFeed{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.nav_matchFeed{
+    position: relative;
+    width: 74vw;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 4rem;
+    margin-top: 1rem;
+    background: radial-gradient(circle, rgba(254, 254, 255, 0.219) 0%, rgba(20, 11, 44, 0.733) 60%);
+    background-color: rgb(91, 44, 168);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+}
+
+.nav_matchFeed h2{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.container_box_table{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+
+/* table */
+
+.table{
+    width: 74vw;  /* 59 */
+    height: 76.5vh;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding-bottom: .6rem;
+    border-radius: 15px;
+    background: rgb(39,25,78);
+    background: radial-gradient(circle, rgba(108, 50, 243, 0.315) 0%, rgba(20, 11, 44, 0.692) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.table::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 103%;
+    height: 3rem;
+    background: rgb(39,25,78);
+    background: radial-gradient(circle, rgb(106, 76, 155) 0%, rgba(24, 16, 49, 0.993) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+}
+
+
+.table_container{
+    width: 74vw; /* 59 */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0rem .2rem;
+    border-radius: 5px;
+    overflow-y: scroll;
+    box-shadow: rgba(166, 128, 255, 0.096) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.116) -3px -3px 6px 1px inset;
+    padding-bottom: 5rem;
+
+}
+
+.table_cabecera{
+    margin-top: 0rem;
+    width: 100%;
+    height: 6.8rem;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    background: radial-gradient(circle, rgba(254, 254, 255, 0.384) 0%, rgba(67, 56, 97, 0.801) 60%);
+    background-color: rgba(61, 15, 134, 0.932);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+}
+
+.status_cabecera{
+    margin-right: 6rem;
+}
+
+.table_cabecera ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height: 6rem;
+    background-color: #f5f5f52d;
+    
+}
+
+.table_cabecera li{
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.table_games {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 99.5%;
+    margin-left: .57rem;
+    height: 8.5rem;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #cbb1fa3b;
+    box-shadow: rgba(166, 128, 255, 0.336) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.301) -3px -3px 6px 1px inset;
+
+}
+
+
+.table_campos{
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.team1_box, .team2_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.result_team1 , .result_team2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_team1 p , .result_team2 p{
+    position: absolute;
+    font-size: 2.1rem;
+    color: white;
+}
+
+.team1_flag{
+    margin-left: 6rem; /* 0 */
+}
+
+.team2_flag{
+    margin-right: 6rem; /* -1 */
+}
+
+
+.team1_flag img, .team2_flag img{
+    object-fit: contain;
+    width: 8.5rem;
+    margin-top: .5rem;
+    height: 6.5rem;
+    border-radius: 15px;
+    filter: contrast(110%) ;
+    box-shadow: 0 0 1rem rgba(168, 130, 255, 0.116);
+}
+
+.startIn_text{
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+.timer_match{
+    position: relative;
+    right: 0;
+}
+
+.game_match{
+    margin-left: -1.5rem;
+    width: 14rem;
+    text-align: center;
+}
+
+.gion{
+    color: white;
+}
+
+@media screen and (max-width:1440px) {
+
+    .table::after{
+        width: 103%;
+        height: 2rem;
+    }
+    
+
+    .nav_matchFeed {
+        width: 90vw;
+        height: 7rem;
+        left: .5rem;
+    }
+
+    .table_cabecera {
+        height: 5rem;
+    }
+
+    
+    .table_cabecera li{
+        font-size: 1.5rem;
+    }
+
+
+    .table_cabecera ul {
+        width: 90vw;
+        height: 5rem;
+    }
+
+    .table_games {
+        width: 88.7vw;
+        height: 8.5rem;
+    }
+
+    .table {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .table_container {
+        width: 90vw;
+    }
+
+    .nav_matchFeed h2 {
+        font-size: 2.3rem;
+    }
+
+    .team1_flag img, .team2_flag img{
+        width: 8rem;
+        height: 5rem;
+    }
+
+    .team1_flag{
+        margin-left: 4rem;
+    }
+    
+    .team2_flag{
+        margin-right: 3rem;
+    }
+    
+
+}
+
+
+@media screen and (max-width:1174px) {
+
+    
+    .table_cabecera ul {
+        width: 90vw;
+    }
+
+
+    .table_games {
+        width: 88.7vw;
+    }
+
+    .table {
+        width: 90vw;  
+    }
+
+    .table_container {
+        width: 90vw;
+    }
+
+
+    .table_cabecera ul{
+        gap: 0rem;
+    }
+    
+    .table_cabecera li{
+        font-size: 1.7rem;
+        color: white;
+    }
+
+    .team1_flag{
+        margin-left: 2rem;
+    }
+    
+    .team2_flag{
+        margin-right: 0rem;
+    }
+  
+    .result_team1 p{
+        font-size: 2.2rem;
+    }
+    
+    .result_team2 p{
+        font-size: 2.2rem;
+    }
+
+}
+
+
+@media screen and (max-width:950px) {
+
+    .table_cabecera ul {
+        width: 90vw;
+        gap: 0rem;
+    }
+
+
+    .table_games {
+        width: 88vw;
+    }
+
+    .table {
+        width: 90vw;  
+        height: 73vh;
+    }
+
+
+
+    .table_container {
+        width: 90vw;
+    }
+
+    .table_cabecera li{
+        font-size: 1.7rem;
+        color: white;
+    }
+
+    .team1_flag{
+        margin-left: -2rem;
+    }
+    
+    .team2_flag{
+        margin-right: -4rem;
+    }
+  
+    .result_team1 p{
+        font-size: 2.2rem;
+    }
+    
+    .result_team2 p{
+        font-size: 2.2rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:780px) {
+
+    .table_games {
+        width: 148%;
+    }
+
+    .status_cabecera{
+        display: none;
+    }
+    
+        
+    .table_cabecera ul {
+        width: 92vw;
+    }
+    .game_match {
+        margin-left: -3rem;
+    }
+
+    .team1_box, .team2_box{
+        gap: 1rem;
+    }
+    
+    
+    .result_team1 p , .result_team2 p{
+        font-size: 2.1rem;
+    }
+    
+    .team1_flag{
+        margin-left: 0rem;
+    }
+    
+    .team2_flag{
+        margin-right: 2rem;
+    }
+    
+    
+    .team1_flag img, .team2_flag img{
+        width: 8.5rem;
+        margin-top: .5rem;
+        height: 5.5rem;
+    }
+    
+    .startIn_text{
+        width: 100%;
+        padding-top: 1rem;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+
+    .table_container{
+        overflow: scroll;
+    }
+
+            
+    .table{
+        height: 70vh;
+    }
+
+}
+
+
+@media screen and (max-width:560px) {
+
+    .table_games {
+        width: 158%;
+    }
+
+    .nav_matchFeed {
+        width: 95vw;
+        left: -0rem;
+    }
+
+    .table_cabecera ul {
+        width: 95vw;
+    }
+
+    .table {
+        width: 95vw;
+        margin-left: -1rem;
+    }
+
+    .table_container {
+        width: 95vw;
+    }
+
+
+    .status_cabecera{
+        display: none;
+    }
+    
+        
+    .table{
+        height: 70vh;
+    }
+
+    .game_match {
+        margin-left: -3rem;
+    }
+
+    .team1_box, .team2_box{
+        gap: 1rem;
+    }
+    
+    
+    .result_team1 p , .result_team2 p{
+        font-size: 2.1rem;
+    }
+    
+    .team1_flag{
+        margin-left: -3rem;
+    }
+    
+    .team2_flag{
+        margin-right: 2rem;
+    }
+    
+    
+    .team1_flag img, .team2_flag img{
+        width: 8.5rem;
+        margin-top: .5rem;
+        height: 5.5rem;
+    }
+    
+    .startIn_text{
+        width: 100%;
+        padding-top: 1rem;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:480px) {
+    .team1_flag img, .team2_flag img{
+        width: 6rem;
+        height: 4.5rem;
+    }
+
+    .result_team1 p{
+        font-size: 2rem;
+    }
+
+    .table{
+        height: 68vh;
+    }
+    
+    .result_team2 p{
+        font-size: 2rem;
+    }
+
+    .table_games {
+        width: 174%;
+        margin-left: .2rem;
+    }
+    .game_match {
+        margin-left: 0rem;
+        font-size: 1.2rem;
+        width: 7rem;
+    }
+
+    .team1_flag{
+        margin-left: 0rem;
+    }
+    
+    .team2_flag{
+        margin-left: 0rem;
+    }
+}
+
+
+@media screen and (max-width:380px) {
+
+    .table_games {
+        width: 180%;
+        margin-left: .2rem;
+    }
+
+}

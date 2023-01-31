@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:gilron;
+
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+  background: radial-gradient(circle, rgba(46, 46, 46, 0.219) 0%, rgba(11, 7, 15, 0.801) 60%);
+  background-color: rgba(46, 21, 87, 0.998);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-right: none;
+    background-position: top;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 197, 248, 0.315);
+  backdrop-filter: blur(1rem);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d0a6ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #8b4dff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@font-face {
+    font-family: 'gilron';
+    src: url('./components/config/fonts/Gilroy-ExtraBold.otf') format("truetype");
+    font-display: swap
+}
+  
+@font-face {
+  font-family: 'qatarHeavy';
+  src: url('./components/config/fonts/Qatar2022Arabic-Heavy.ttf') format("truetype");
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'qatar';
+  src: url('./components/config/fonts/Qatar2022Arabic-Bold.ttf') format("truetype");
+  font-display: swap
+}
+  
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  background-image: url("./components/config/src/backMatch7.png");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: contrast(110%);
+}
+
+::-moz-selection {
+  background: rgba(177, 149, 255, 0.548) !important;
+  color: white;
+
+}
+
+::selection {
+  background: rgba(177, 149, 255, 0.548) !important;
+  color: white;
+}
+  main{
+    overflow: hidden;
+    background: #160D1F;
+
+  }
+
+  .candado{
+    object-fit: contain;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter:brightness(75%) drop-shadow(0 0 5px rgba(163, 82, 255, 0.616));
+  }
+  
+  
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none;
+  -webkit-appearance: none; 
+  margin: 0; 
+}

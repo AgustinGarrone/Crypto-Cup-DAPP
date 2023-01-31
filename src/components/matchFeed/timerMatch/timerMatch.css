@@ -1,0 +1,106 @@
+.reloj{
+    list-style: none;
+    display: flex;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 21rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    position: relative;
+    left: -3rem ; 
+}
+
+.finished_matchFeed{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    position: relative;
+    top: .5rem;
+}
+
+
+.dateMatchFeed{
+    position: relative;
+    top: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+
+.time_matchFeed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.time_matchFeed p{
+    background-color: rgba(203, 181, 255, 0.171);
+    padding: .3rem .5rem ;
+    border-radius: 5px;
+    text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.425);
+    margin:0 .3rem;
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+}
+
+.startIn_text{
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+.reloj span{
+    padding: 0 .4rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+}
+
+@media screen and (max-width:1400px) {
+    
+    .reloj{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .reloj p{
+        padding: .1rem .5rem;
+    }
+    
+    .reloj span{
+        padding: 0 .5rem;
+        font-size: 1rem;
+    }
+    
+    .startIn_text{
+        background-color: transparent;
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    
+    .reloj{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .reloj p{
+        padding: .8rem .5rem;
+    }
+    
+    .reloj span{
+        padding: 0 .5rem;
+        font-size: 1.3rem;
+    }
+    
+
+}
+
+

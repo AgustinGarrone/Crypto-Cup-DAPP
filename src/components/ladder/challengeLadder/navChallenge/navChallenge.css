@@ -1,0 +1,918 @@
+.container_navChallenge{
+    position: relative;
+    width: 74vw;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav_challengeRoom{
+    z-index: 9998;
+    position: relative;
+    width: 90vw;
+    height: 7rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.171);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(210, 194, 255, 0.103) -3px -3px 6px 1px inset;
+    background: radial-gradient(circle, rgba(254, 254, 255, 0.384) 0%, rgba(67, 56, 97, 0.801) 60%);
+    background-color: rgba(61, 15, 134, 0.932);
+    margin-top: 0rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.box_create_sala{
+    z-index: 9998;
+    position: relative;
+    margin-top: 1rem;
+    height: 7rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.nav_challengeRoom h2{
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container_links_movile_challengeRoom{
+    display: none;
+}
+
+.links_challengeRoom ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    gap: 2rem;
+}
+
+.links_challengeRoom li{
+    color: white;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.links_challengeRoom li:after {
+    content: '';
+    bottom: -2.1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(#ead8ffda, #ab61ff);;
+    -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #d2b6ffe0, 0px 0px 11px #caa9ffe7;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #be95ff, 0px 0px 11px #924eff;
+    -webkit-transition: all 0.3s ease-in;
+    z-index: 9999999999 !important ;
+    border-radius: 45px;
+    opacity: .7;
+    transition: all 0.3s ease ;
+}
+  
+.links_challengeRoom li:hover:after {
+    width: 100%;
+    height:3px;
+    filter: drop-shadow(0px -10px 8px rgba(195, 161, 250, 0.267));
+}
+
+
+/* container create room *//* container filter */
+.container_createRoom , .containerFilter_match{
+    width: 25rem;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: -1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.171);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(210, 194, 255, 0.103) -3px -3px 6px 1px inset;
+    background: radial-gradient(circle, rgba(254, 254, 255, 0.384) 0%, rgba(67, 56, 97, 0.801) 90%);
+    background-color: rgba(61, 15, 134, 0.932);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    gap: 1rem;
+    color: white;
+    letter-spacing: 1px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.container_find_click{
+    position: absolute;
+    width: 9.5vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container_room_click{
+    position: absolute;
+    width: 9.5vw;
+    height: 100%;
+    right:0rem;
+    cursor: pointer;
+}
+
+
+
+.container_createRoom{
+    box-shadow: rgba(207, 187, 255, 0.226) 3px 3px 6px 0px inset, rgba(226, 216, 255, 0.103) -3px -3px 6px 1px inset;
+    background: radial-gradient(circle, rgba(139, 51, 190, 0.863) 0%, rgba(107, 82, 175, 0.801) 90%);
+    background-color: rgba(68, 19, 146, 0.932);
+}
+
+.container_createRoom:hover {
+    box-shadow: rgba(143, 22, 255, 0.226) 3px 3px 6px 0px inset, rgba(226, 216, 255, 0.103) -3px -3px 6px 1px inset;
+    background: radial-gradient(circle, rgba(140, 46, 194, 0.863) 0%, rgba(107, 82, 175, 0.801) 80%);
+    background-color: rgba(70, 12, 104, 0.932);
+}
+
+.containerFilter_match:hover{
+    box-shadow: rgba(207, 187, 255, 0.226) 3px 3px 6px 0px inset, rgba(226, 216, 255, 0.103) -3px -3px 6px 1px inset;
+    background: radial-gradient(circle, rgba(185, 65, 255, 0.863) 0%, rgba(107, 82, 175, 0.801) 90%);
+    background-color: rgba(68, 19, 146, 0.932);
+    transition: all .5s ease-in-out;
+}
+
+/* container filter */
+
+
+
+
+
+.busqueda_match{
+    width: 2.5rem;
+}
+
+
+.box_id_match{
+    display: none;
+}
+
+
+.box_filter_match{
+    position: fixed;
+    width: 35rem;
+    height: 9rem;
+    z-index: 9999;
+    top: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all .5 ease;
+    background: radial-gradient(circle, rgb(101, 68, 179) 0%, rgb(39, 27, 70) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.box_filter_match_active{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+
+.box_id_match_challenge{
+    width: 100%;
+    height: 9rem;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    border-radius: 10px;
+    border-top: none;
+}
+
+.id_match{
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    border-radius: 15px;
+    height: 6rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+
+
+.box_input_nav input{
+    width: 22rem;
+    height: 6rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    transition: 1.5s;
+    letter-spacing: 1px;
+    background: rgb(47, 26, 75);
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 90;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+.box_input_nav input::placeholder{
+    color: rgba(185, 185, 185, 0.76);
+    left: 4rem;
+    font-size: 1.8rem;
+}
+
+
+/* create room */
+
+
+.box_create_room_challenge{
+    position: fixed;
+    width: 40rem;
+    z-index: 9999;
+    top: 18rem;
+    right: 13% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    border-radius: 15px;
+    background: radial-gradient(circle, rgb(101, 68, 179) 0%, rgb(39, 27, 70) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    padding:2rem 1rem;
+
+}
+
+.box_create_room_challenge_active{
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+
+/* filter matchs */
+
+
+.box_elegir_partido_challenge , .box_elegir_team_challenge{
+    width: 99%;
+    border-radius: 10px;
+    position: relative;
+    transition: all .5 ease;
+    background: radial-gradient(circle, rgba(108, 50, 243, 0.363) 0%, rgba(42, 26, 85, 0.685) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    display: none !important;
+    opacity: 0;
+    display: flex;
+    transition: all .5 ease;
+    overflow-y: scroll;
+
+}
+
+.box_elegir_partido_challenge_active , .box_elegir_team_challenge_active{
+    display: flex !important;
+    opacity: 1;
+    top: -1rem;
+    transition: all .5 ease;
+
+}
+
+
+.formPartidos_challenge , .formTeams_challenge{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin:2rem ;
+    gap: 2rem;
+}
+
+.formPartidos_challenge p{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.lab_challenge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.span_select_part{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 2rem;
+}
+
+.span_select_part_2{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: flex;
+    margin: .5rem 0;
+    gap: 2rem;
+}
+
+
+/* select team */
+
+
+
+.filterPartidos{
+    width: 99%;
+    height: 7rem;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(108, 50, 243, 0.363) 0%, rgba(42, 26, 85, 0.685) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+    cursor: pointer;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    transition: all .3s ease;
+}
+
+.label_match_challenge {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .label_match_challenge input {
+    position: absolute;
+    left: -9999px;
+    
+  }
+  .label_match_challenge input:checked + span {
+    background-color: #d6d6e5;
+    color: black;
+}
+  .label_match_challenge input:checked + span:before {
+    box-shadow: inset 0 0 0 0.4375em #00005c;
+
+  }
+  .label_match_challenge span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+  }
+  .label_match_challenge span:hover {
+    background-color: #d6d6e5;
+    color: black;
+  }
+  .label_match_challenge span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #00005c;
+
+  }
+  
+
+/* cant tokens */
+
+.box_toknes_match_challenge{
+    width: 100%;
+    height: 7rem;
+    position: relative;
+    top: 0%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(108, 50, 243, 0.363) 0%, rgba(42, 26, 85, 0.685) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+   
+}
+
+.tokens_match{
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    border-radius: 15px;
+    height: 5rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: rgb(47, 26, 75);
+}
+
+.tokens_match img {
+    width: 5rem;
+}
+
+
+.box_input_nav_tokens input{
+    width: 26rem;
+    height: 5rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    transition: 1.5s;
+    letter-spacing: 1px;
+    background: rgb(47, 26, 75);
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 90;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+.box_input_nav_tokens input::placeholder{
+    color: rgba(185, 185, 185, 0.76);
+    left: 4rem;
+    font-size: 1.4rem;
+}
+
+
+
+/* button create room */
+
+.button_createRoom{
+    width: 38rem;
+    height: 6rem;
+    position: relative;
+    top: 0%;
+    left: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(108, 50, 243, 0.363) 0%, rgba(42, 26, 85, 0.685) 60%);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    border: 2px ridge rgba(161, 111, 255, 0.699);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button_createRoom:hover{
+    box-shadow: rgba(166, 128, 255, 0.568) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.568) -3px -3px 6px 1px inset;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width:1440px) {
+
+    .box_create_room_challenge{
+        width: 40rem;
+        top: 18rem;
+        right: 3% ;
+    }
+
+    .container_find_click {
+        position: absolute;
+        width: 10.5vw;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .container_room_click{
+        position: absolute;
+        width: 8.5vw;
+        height: 100%;
+        right:0rem;
+        cursor: pointer;
+    }
+
+    .container_navChallenge {
+        position: relative;
+        width: 95vw;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav_challengeRoom{
+        width: 100vw;
+        padding: 0 3rem;
+    }
+
+    .container_friendsLadder {
+        width: 95vw;
+    }
+    
+    .nav_challengeRoom h2{
+        font-size: 3rem;
+    }
+    
+    .links_challengeRoom ul{
+        gap: 2rem;
+    }
+    
+    .links_challengeRoom li{
+        font-size: 1.6rem;
+    }
+
+    .links_challengeRoom li:after {
+        bottom: -1.8rem;
+    }
+
+    .container_createRoom{
+        width: 18rem;
+        padding: 0 1rem;
+
+    }
+
+    .containerFilter_match{
+        width: 20rem;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+    }
+ 
+    .box_id_match_challenge {
+        height: 9rem;
+        top: 0%;
+        left: 0;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width:1024px) {
+
+    
+    .container_find_click{
+        width: 8.5vw;
+        left: 0rem;
+    }
+
+    .container_room_click{
+        width: 10.5vw;
+    }
+
+
+    .nav_challengeRoom{
+        width: 90vw;
+        padding: 0 2rem;
+    }
+
+    .containerFilter_match p{
+        display: none;
+    }
+
+ 
+    
+    .nav_challengeRoom h2{
+        font-size: 2.5rem;
+    }
+    
+    .links_challengeRoom ul{
+        gap: 2rem;
+    }
+    
+    .links_challengeRoom li{
+        font-size: 1.4rem;
+    }
+    
+    .links_challengeRoom{
+        display: none;
+    }
+
+
+    .toggle_link_challengeRoom{
+        font-size: 3rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        z-index: 9999;
+    }
+
+    .container_links_movile_challengeRoom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_links_movile_challengeRoom{
+        width: 94.5vw;
+        position: fixed;
+        left: 2.5vw;
+        top: 18rem;
+        padding: 1.3rem 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+        border: 2px solid rgba(255, 255, 255, 0.178);
+        border-radius:10px;
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(210, 194, 255, 0.164) -3px -3px 6px 1px inset;
+        background: radial-gradient(circle, rgba(254, 254, 255, 0.192) 0%, rgba(47, 36, 78, 0.801) 60%);
+        background-color: rgba(25, 5, 56, 0.932);
+    
+    }
+
+    .box_links_movile_challengeRoom_active{
+        visibility: visible;
+        opacity: 1;
+        transition: all .2s ease-in-out;
+    }
+
+    .container_links_movile_challengeRoom ul{
+        list-style: none;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 14rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:.5rem;
+    }
+
+    .links_movile_challengeRoom li{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        padding: 1rem ;
+        border-radius: 5px;
+        border-left: none;
+        text-shadow: 0 0 .2rem black;
+    }
+
+
+    .links_movile_challengeRoom li:hover{
+        background-color: #5a12b9f8;
+        transition: all .3s ease-in-out;
+        text-shadow: 0 0 .1rem black;
+    }
+
+    .container_createRoom{
+        width: 13rem;
+        padding: 0 ;
+    }
+
+    .containerFilter_match{
+        width: 15rem;
+        padding: 0 ;
+    }
+
+
+
+    .container_createRoom p{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:600px) {
+    .nav_challengeRoom{
+        width: 90vw;
+    }
+
+    .box_create_sala {
+        width: 17rem ;
+    }
+    .nav_challengeRoom h2 {
+        font-size: 1.3rem;
+    }
+ 
+    .container_find_click{
+        width: 12.5vw;
+    }
+
+
+    .container_room_click{
+        width: 15.5vw;
+    }
+    .box_links_movile_challengeRoom{
+        width: 94.5vw;
+    
+    }
+
+
+
+}
+
+@media screen and (max-width:480px) {
+
+    .nav_challengeRoom{
+        width: 98vw;
+    }
+
+    .container_find_click{
+        position: absolute;
+        width: 19.5vw;
+        height: 100%;
+        right:0rem;
+        cursor: pointer;
+    }
+
+    .links_movile_challengeRoomli{
+        font-size: 1.6rem;  
+    }
+
+
+    .box_links_movile_challengeRoom{
+        width: 94.5vw;
+        left: 2.5vw;
+        height: 16.5rem;
+    }
+
+    .container_navChallenge {
+        width: 95vw;
+    }
+
+    .box_create_room_challenge{
+        width: 35rem;
+        top: 18rem;
+        right: 3% ;
+    }
+
+    .button_createRoom {
+        width: 33rem;
+        height: 6rem;
+    }
+
+
+    .container_find_click{
+        width: 15.5vw;
+    }
+
+    .containerFilter_match {
+        width: 13rem;
+        padding: 0;
+    }
+
+    .container_createRoom{
+        width: 12rem;
+        padding: 0 ;
+    }
+
+    .container_room_click{
+        width: 17.5vw;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:400px) {
+
+
+    .container_find_click{
+        width: 18vw;
+    }
+
+
+    .container_room_click{
+        width: 21.5vw;
+    }
+    .nav_challengeRoom{
+        width: 98vw;
+    }
+
+    .links_movile_challengeRoomli{
+        font-size: 1.6rem;  
+    }
+
+
+    .box_links_movile_challengeRoom{
+        width: 98vw;
+        left: .9vw;
+        height: 16.5rem;
+    }
+
+    .container_navChallenge {
+        width: 98vw;
+    }
+
+    .nav_challengeRoom h2 {
+        font-size: 1.1rem;
+    }
+
+    .container_friendsLadder {
+        width: 98vw;
+    }
+
+    .box_create_room_challenge{
+        width: 35rem;
+        top: 18rem;
+        right: 2% ;
+    }
+
+    .button_createRoom {
+        width: 33rem;
+        height: 6rem;
+    }
+ 
+}
+
+
+@media screen and (max-width:360px) {
+
+    .box_create_room_challenge{
+        width: 31rem;
+        top: 18rem;
+        right: 2% ;
+    }
+
+    .button_createRoom {
+        width: 29rem;
+        height: 6rem;
+    }
+ 
+
+    .box_input_nav_tokens input {
+        width: 20rem;
+        height: 5rem;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+    }
+    
+    .box_input_nav_tokens{
+        margin: 0 1rem;
+    }
+
+    .container_find_click{
+        width: 21vw;
+    }
+
+
+    .container_room_click{
+        width: 25.5vw;
+    }
+}

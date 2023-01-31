@@ -1,0 +1,458 @@
+.nav{
+    width: 100%;
+    height: 9rem;
+    position: fixed;
+    top: 0%;
+    border: 1px solid #b26aff75;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 99999;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.219) 0%, rgba(16, 9, 36, 0.959) 100%);
+    background-color: rgba(52, 2, 131, 0.863);
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+}
+
+/* google */
+
+
+
+
+/* ---- */
+
+.header{
+    width: 100%;
+    height: 9rem;
+    position: relative;
+    top: 0%;
+}
+
+.listNav{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+}
+
+
+.listNav .link_nav_text, .link_nav_text_desconected{
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logoNav{
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.logoNav_desconect{
+    width: 9rem;
+    height: 9rem;
+    margin-left: 4rem;
+}
+
+.listNav_login{
+    position: relative;
+    width: 61%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.buttonLogin , .buttonLogin_desconnect{
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 16rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90.23deg, #b758eed3 -1.47%, #9155ffde 99.8%);
+    transition: all .7s ease;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.068) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.062) 0px 4px 2px, rgba(0, 0, 0, 0.068) 0px 8px 4px;
+    border: 2px ridge rgba(180, 130, 238, 0.438);
+}
+
+#googleLogin{
+    scale: 1.2;
+    transition: all .7s ease;
+}
+
+
+#googleLogin:hover{
+    scale: 1.3;
+    transition: all .7s ease;
+}
+
+
+.buttonLogin:hover , .buttonLogin_desconnect:hover ,.user_flag:hover{
+    scale: 1.05;
+    transition: all .7s ease;
+}
+
+
+.buttonLogin img{
+    width: 4rem;
+}
+
+.user_flag{
+    border-radius: 100%;
+    height: 5.5rem;
+    width: 5.5rem;
+    position: absolute;
+    background-color: rgba(122, 43, 226, 0.329);
+    right: 24.5%;
+    border: 2px solid rgba(28, 2, 90, 0.137);
+    filter: drop-shadow(0 0 2px rgba(150, 120, 221, 0.158));
+    cursor: pointer;
+    z-index: 999;
+    transition: all .7s ease;
+}
+
+.pais_profile_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile_img{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    left: 5.5rem;
+    top: 1.5rem;
+    margin-left: .5rem;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.247));
+}
+
+.nav_Toggle{
+    display: none;
+}
+
+
+.subList_ladders{
+    position: absolute;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #75519C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 18rem;
+    top: 3rem;
+    background-color: rgba(9, 0, 20, 0.918);
+    backdrop-filter: blur(1rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.ladders_nav{
+    color: white;
+}
+
+.ladders_nav:hover > .subList_ladders{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+
+.subList_ladders li{
+    font-size: 1.5rem;
+}
+
+
+/* effect navbar */
+
+.listNav .link_nav_text:after , .link_nav_text_desconected:after{
+  content: '';
+  bottom: -3.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background: linear-gradient(#ead8ffda, #ab61ff);;
+  -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #d2b6ffe0, 0px 0px 11px #caa9ffe7;
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #be95ff, 0px 0px 11px #924eff;
+  -webkit-transition: all 0.3s ease-in;
+  z-index: 9999999999 !important ;
+  border-radius: 15px;
+  transition: all 0.3s ease ;
+}
+
+.listNav .link_nav_text:hover:after , .link_nav_text_desconected:hover:after{
+    width: 100%;
+    height: 2px;
+    filter: drop-shadow(0px -10px 8px rgba(195, 161, 250, 0.267));
+}
+
+.listNav .logoList :after {
+    pointer-events: none;
+}
+
+.nav_list_links{
+    text-shadow: 0 0 .1rem rgb(0, 0, 0);
+}
+
+.list_nav_ocultar{
+    display: none;
+}
+
+/* desconect */
+
+
+.link_nav_text_desconected , .link_nav_text_desconected_logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    left: -20rem;
+}
+
+
+
+@media screen and (max-width:1440px) {
+
+    .nav{
+        padding: 0 1rem;
+        background-color: rgba(85, 52, 116, 0.897);
+    }
+
+
+    .listNav{
+        width: 80%;
+    }
+    .listNav_login{
+        width: 40%;
+    }
+    
+    .listNav li{
+        font-size: 1.45rem;
+    }
+
+    .user_flag{
+        right: 25%;
+    }
+
+}
+
+@media screen and (max-width:1160px) {
+    .user_flag{
+        right: 27%;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .nav{
+        padding: 0 1rem;
+        justify-content: flex-end;
+    }
+
+   
+    .nav_list_desconected {
+        margin-right: 0rem;
+        font-size: 2.2rem;
+        position: absolute;
+        top: -15rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .link_nav_text_desconected{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        left: 0rem;
+    }
+
+    .matchDesconect{
+        position: relative;
+        right: 0rem;
+        width: 20rem;
+    }
+
+
+    .listNav{
+       visibility: hidden;
+       width: 100%;
+       height: 100vh;
+       background-color: rgba(6, 0, 15, 0.986);
+       backdrop-filter: blur(1rem);
+       flex-direction: column;
+       position: fixed;
+       top: 0rem;
+       left: 0rem;
+       gap: 6rem;
+       opacity: 0;
+       transition: all .2s ease-in-out;
+       background-image: url("../config/src/backMatch3.jpg");
+       background-position: 100% 100%;
+       background-size: cover;
+       background-attachment: fixed;
+    }
+
+    .listNav::after{
+        width: 110%;
+        height: 100%;
+        content: " ";
+        top: 0rem;
+        background-color: rgba(0, 0, 0, 0.400);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .listNav_active{
+        display: flex;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        transition: all .2s ease-in-out;
+     }
+ 
+    .listNav li{
+        display: flex;
+
+        color: white;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: relative;
+
+    }
+
+    .listNav_login{
+        position: absolute;
+        width: 40%;
+    }
+
+    .logoNav{
+        display: none;
+    }
+    .logoNav_desconect{
+        display: none;
+    }
+
+    
+    .nav_Toggle{
+        display: inline-block;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        cursor: pointer;
+        z-index: 5500;
+        position: absolute;
+        left: 10%;
+    }
+
+    .user_flag{
+        right: 32%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .user_flag{
+        right: 45%;
+    }
+
+    
+    .listNav_login{
+        position: absolute;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .buttonLogin, .buttonLogin_desconnect {
+        font-size: 1.4rem;
+        height: 4.5rem;
+        width: 15rem;
+        gap: .5rem;
+    }
+
+    .listNav_login{
+        margin-right: 1rem;
+    }
+
+    .user_flag{
+        right: 50%;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .user_flag{
+        right: 58%;
+    }
+    .buttonLogin, .buttonLogin_desconnect {
+        font-size: 1.2rem;
+        height: 4.5rem;
+        width: 13rem;
+        gap: .5rem;
+    }
+
+    .listNav_login {
+        position: absolute;
+        width: 60%;
+    }
+
+    .buttonLogin img {
+        width: 3.5rem;
+    }
+}

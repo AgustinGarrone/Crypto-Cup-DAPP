@@ -1,0 +1,110 @@
+*{
+    text-decoration: none;
+}
+
+.container_LaddersHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.slider_cards{
+    width: 66%;
+}
+
+.splide__pagination {
+    bottom: -2.3rem !important;
+    opacity: .8 !important;
+}
+
+.airdrop{
+    position: relative;
+    text-align: center;
+    border-radius: 15px !important;
+    z-index: 1000;
+    padding: .2rem;
+    border: 1px solid #b26aff3b;
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    background-image: url("./src/Recuadro.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.box_splide{
+    position: relative;
+    text-align: center;
+    border-radius: 15px !important;
+    z-index: 1000;
+    padding: .2rem;
+    border: 1px solid #b26aff3b;
+    box-shadow: rgba(166, 128, 255, 0.226) 3px 3px 6px 0px inset, rgba(170, 139, 255, 0.226) -3px -3px 6px 1px inset;
+    overflow: hidden;
+}
+
+.box_splide img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    filter: brightness(105%) contrast(98%) ; 
+    overflow: hidden;
+}
+
+
+
+
+.splide__arrow--prev, .splide__arrow--next , .splide__pagination__page{
+    filter: hue-rotate(80deg) drop-shadow( 0 0 2px rgba(139, 89, 255, 0.658));
+  }
+  
+.splide {
+    padding: 0rem !important;
+}
+.splide__arrow--next {
+    right: 3.5rem !important;
+}
+  
+.splide__arrow--prev {
+    left: 3.5rem !important;
+}
+
+
+@media screen and (max-width:1440px){
+
+    .container_LaddersHome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .slider_cards{
+        width: 72%;
+    }
+    
+
+}
+
+@media screen and (max-width:1170px) {
+    
+    .slider_cards{
+        width: 80%;
+    }
+
+    .box_splide{
+        padding: .4rem;
+    }
+
+
+    .box_splide img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
